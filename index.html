@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scrollbar.css">
 </head>
 
 <body>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <div id="menu-animation" class="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#section-1" onclick="hideMenu()">Home</a></li>
+                <li><a href="#section-2" onclick="hideMenu()">About</a></li>
+                <li><a href="#section-3" onclick="hideMenu()">Gallery</a></li>
+                <li><a href="#section-4" onclick="hideMenu()">Blog</a></li>
+                <li><a href="#section-5" onclick="hideMenu()">Contact</a></li>
 
+            </ul>
+        </nav>
+    </div>
     <main>
         <!-- section 1 -->
 
@@ -36,11 +55,10 @@
 
         <!-- section 2 -->
         <section id="section-2">
-            <div>
-                <h2>
-                    What we offer you
-                </h2>
-            </div>
+
+            <h2>
+                What we offer you
+            </h2>
             <img src="Animalia-store_9.jpg" width="400" height="400" alt="Farm option" class="main-image">
         </section>
 

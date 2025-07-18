@@ -31,3 +31,20 @@ function lightmode() {
     themeSwitcher.children[0].textContent = 'Light mode';
     themeSwitcher.children[1].className = 'fas fa-sun';
 }
+
+// Navigation
+const nav = document.getElementById('nav');
+const menuIcon = document.querySelector('#menu-animation');
+
+function toggleMenu() {
+    nav.classList.toggle('active');
+    menuIcon.classList.toggle('active')
+
+}
+
+
+function hideMenu() {
+    nav.classList.remove('active');
+    menuIcon.classList.remove('active')
+
+}
